@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.test.pojo.Fuheplan" table="fuheplan" schema="nengzhongpower">
+        <id name="planId">
+            <column name="planId" sql-type="int(11)"/>
+        </id>
+        <property name="planValue">
+            <column name="planValue" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="planTime">
+            <column name="planTime" sql-type="timestamp" not-null="true"/>
+        </property>
+        <property name="planSortId">
+            <column name="planSortId" sql-type="int(11)" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
